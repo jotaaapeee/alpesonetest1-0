@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BMWBold";
+  src: url("../assets/fonts/BMWTypeNext-Bold.20210426144302.ttf");
+}
+
+@font-face {
+  font-family: "BMWLight";
+  src: url("../assets/fonts/BMWTypeNext-Light.20210426144302.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E6E6E6;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4D4D4D;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body, input, textarea, button {
+  font: 400 1rem 'BMWLight', 'BMWBold';
+  border: none;
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 80.5%;
+  }
+}
+
+form {
+  height: 40vh;
+}
+
+form .form-content {
+  margin: 1rem;
+  padding: 10px;
+}
+
+form .form-content .form-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-content .form-title h2 {
+  font-weight: 400;
+}
+
+form .form-content .form-title img {
+  width: 1.5rem;
+  padding-right: 5px;
+}
+
+form .form-content input {
+  width: 100%;
+  border-bottom: solid 1px #666666;
+  padding: 10px 0 2px 0;
+  outline: none;
+}
+
+form .form-content input :hover {
+  color: #1C69D4;
+}
+
+form .form-content input :focus {
+  border-color: #1C69D4;
+}
+
+form .policy-therms {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form .policy-therms label {
+  padding-left: 10px;
+}
+
+form .policy-therms :hover {
+  color: #1c69d4;
+}
+
+form button {
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=Form.css.map */

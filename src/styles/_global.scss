@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BMWBold";
+  src: url("../assets/fonts/BMWTypeNext-Bold.20210426144302.ttf");
+}
+
+@font-face {
+  font-family: "BMWLight";
+  src: url("../assets/fonts/BMWTypeNext-Light.20210426144302.ttf");
+}
+
+$white: #FFFFFF;
+$black: #000000;
+$main-gray: #666666;
+$medium-gray: #4D4D4D;
+$dark-gray: #262626;
+$blue: #1C69D4;
+$dark-blue: #0351BE;
+$green: #25D366;
+$light-gray: #E6E6E6;
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $light-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: $medium-gray;
+}
+
+body{
+  height: 100%;
+  overflow: hidden;
+}
+
+body, input, textarea, button{
+  font: 400 1rem 'BMWLight', 'BMWBold';
+  border: none;
+}
+
+@media(min-width: 1080px) {
+  html{
+    font-size: 5rem;
+  }
+}
+@media(min-width: 720px) {
+  html{
+      font-size: 80.5%;
+  }
+}

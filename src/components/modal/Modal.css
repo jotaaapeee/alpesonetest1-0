@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BMWBold";
+  src: url("../assets/fonts/BMWTypeNext-Bold.20210426144302.ttf");
+}
+
+@font-face {
+  font-family: "BMWLight";
+  src: url("../assets/fonts/BMWTypeNext-Light.20210426144302.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E6E6E6;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #4D4D4D;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body, input, textarea, button {
+  font: 400 1rem 'BMWLight', 'BMWBold';
+  border: none;
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    font-size: 80.5%;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal button:first-child {
+  color: #FFFFFF;
+  background-color: #666666;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal button:hover {
+  opacity: 0.5;
+}
+
+.modal .container {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+/*# sourceMappingURL=Modal.css.map */
